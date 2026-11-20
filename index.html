@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .done{
+            background-color: rgb(149, 254, 149);
+            text-decoration: line-through;
+        }
+
+        .todo{
+            border: 10px solid grey;
+            padding: 10px 15px;
+        }
+        button{
+            border: 5px solid grey;
+        }
+          #main{
+            justify-content: center;
+          }  
+    body{
+        background-color: bisque;
+    }
+    </style>
+</head>
+<body >
+
+    <div id="main">
+
+        <h2>Todo list</h2>
+        <div id="input-section">
+            <input type="text" name="" id="todo-inp">
+            <button id="addBtn"  onClick="addTodo()">add</button>
+            <button id="delAllBtn"  onClick="deleteAllTodos()">delete all</button>
+        </div>
+
+        <div class="todo-lists"></div>
+
+
+
+    </div>
+   
+
+    <script src="app.js"></script>
+</body>
+</html>
